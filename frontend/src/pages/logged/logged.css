@@ -1,0 +1,1219 @@
+
+
+
+#aviao{
+    font-size: 20px;
+}
+
+#painel{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+#painel_form{
+    user-select: none;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(212, 208, 208);
+}
+
+.connection_selector{
+    width: 250px;
+}
+
+
+.nav_item{
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border: none;
+    background-color: rgba(71, 70, 70, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    border: rgb(0, 0, 0,0.3) 1px solid;
+    transition: all ease 0.3s;
+}
+
+.nav_item:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+
+}
+
+.nav_item.focused{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.generic_painel_label{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.generic_painel_input{
+    width: 100%;
+    margin-bottom: 10px !important;
+}
+
+#disparar_button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+    background: rgb(49, 49, 230,0.8);
+    height: 40px;
+    border: none;
+    border: 1px solid rgb(122, 120, 120);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+}
+#disparar_button:hover{
+    cursor: pointer;
+    background: rgb(49, 49, 230,0.85);
+}
+#divider{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 0.3px;
+    width: 80%;
+    background-color: rgb(136, 136, 136,0.4);
+}
+
+.connection_button{
+    background-color: rgb(240, 240, 240);
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.connection_button:hover{
+    cursor: pointer;
+}
+
+.connections_generic_icon{
+    font-size: 20px;
+}
+
+#delete_connection{
+    color: white;
+    background-color: rgb(232, 104, 104);
+}
+
+#delete_connection:hover{
+    background-color: rgb(228, 67, 67)
+
+}
+
+#qr_code_icon{
+    margin-left: 22px;
+}
+
+#trash_icon{
+    margin-left: 10px;
+}
+
+#generate_qrcode:hover{
+    background-color: rgb(223, 219, 219);
+}
+
+#list_conections:hover{
+    background-color: rgb(223, 219, 219);
+}
+
+#cancel_qr_code{
+    border-radius: 5px;
+    color: rgb(232, 104, 104);
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: white;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+#cancel_qr_code:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(232, 104, 104);
+}
+
+
+#go_gen_qr_code{
+    border-radius: 5px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: rgb(49, 49, 230,0.8);
+    padding: 10px 20px;
+}
+
+#go_gen_qr_code:hover{
+    cursor: pointer;
+    background-color: rgb(49, 49, 230,0.85);
+
+}
+
+#go_remove_connection{
+    border-radius: 5px;
+    color:  white;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: rgb(232, 104, 104);
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+#go_remove_connection:hover{
+    cursor: pointer;
+    background-color: rgb(228, 67, 67)
+}
+
+#cancel_remove_connection{
+    border-radius: 5px;
+    color:  rgb(232, 104, 104);
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color:  white;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+#cancel_remove_connection:hover{
+    cursor: pointer;
+}
+
+#close_connections_list{
+    border-radius: 5px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: rgb(49, 49, 230,0.8);
+    padding: 10px 20px;
+}
+
+#close_connections_list:hover{
+    cursor: pointer;
+    background-color: rgb(49, 49, 230,0.85);
+
+}
+
+#table_container{
+    display: flex;
+    flex-direction: column;
+}
+
+#invalid_field{
+    font-size: 10px;
+    color: red;
+}
+
+#set_message{
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid rgb(106, 105, 105,0.3);
+    border-radius: 5px;
+    background-color: rgb(56, 193, 252);
+    font-family: "Roboto", sans-serif;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: all ease 0.3s;
+}
+
+#set_message:hover{
+    cursor: pointer;
+    background-color: rgb(18, 151, 208)
+}
+
+#set_message_icon{
+    color: white;
+    font-size: 20px;
+}
+
+#ready_message{
+    border-radius: 5px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: rgb(49, 49, 230,0.8);
+    padding: 10px 20px;
+}
+
+#ready_message:hover{
+    cursor: pointer;
+    background-color: rgb(49, 49, 230,0.85);
+
+}
+
+.emoji_picker{
+    position: absolute;
+    margin-bottom: 20px;
+
+}
+
+.message_box{
+    width: 500px;
+    height: 300px;
+}
+
+
+#message_alert_title{
+    margin-bottom: 20px;
+}
+
+
+#open_emojis_button{
+    padding-left: 10px;
+    height: 35px;
+    border: solid 1px rgb(117, 121, 117,0.2);
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    position: absolute;
+    left: 10px;
+}
+
+#open_emojis_button:hover{
+    border: solid 1px rgb(117, 121, 117,0.4);
+    cursor: pointer;
+
+}
+
+#emoji_image{
+    width: 30px;
+    height: 30px;
+}
+
+#anexar_arquivo{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+    color: rgb(44, 42, 42);
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: rgba(210, 210, 224, 0.8);
+    padding: 10px 20px;
+}
+
+#anexar_arquivo:hover{
+    cursor: pointer;
+}
+
+#on-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    left: 10px;
+}
+
+#message-flex{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+#toggle_emoji{
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(192, 185, 185, 0.3);
+    border: solid 1px rgb(129, 122, 122,0.3);
+    padding: 5px 10px;
+}
+
+#toggle_emoji:hover{
+    cursor: pointer;
+    background-color: rgba(121, 119, 119, 0.3);
+}
+
+#emoji-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.epr_q53mwh.epr_vl50xg.epr_-3yva2a.epr_c90x4z.epr_-sisw4f.epr_mw4zr1.epr_-kg0voo.epr_iogimd.epr_wtwvf4.epr_-lzq3oa{
+    display: none;
+}
+
+#logout{
+    font-family: "Roboto", sans-serif;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color:  rgb(232, 104, 104);
+    position: absolute;
+    right: 0px;
+    color: white;
+}
+
+#logout:hover{
+    cursor: pointer;
+    background-color:  rgb(232, 68, 68);
+}
+
+#label_set_interval{
+    margin-bottom: 0px ;
+}
+
+#label_set_interval_container{
+    display: flex;
+    gap: 5px;
+}
+
+#existing_connection{
+    font-size: 13px;
+    margin-top: 10px;
+    color: red;
+}
+
+.go_gen_qr_code.unabled{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#qr_image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    opacity: 0; /* Start with zero opacity */
+    animation: fadeIn 0.5s ease forwards; /* Use the defined animation */
+}
+
+#mini_circular_progress{
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.go_gen_qr_code.unabled.loading{
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cancel_qr_code.unabled{
+    pointer-events: none;
+}
+
+#conectado{
+    color: rgb(74, 221, 74);
+}
+.go_remove_connection.loading{
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.disparing{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#disparo_progress{
+    margin-top: 10px;
+}
+
+#disparo_progress_label{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+#acompanhar_button{
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+    background: rgb(76, 219, 214);
+    height: 40px;
+    border: none !important;
+    border: 1px solid rgb(122, 120, 120);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+}
+#acompanhar_button:hover{
+    cursor: pointer;
+    background: rgba(39, 173, 169, 0.9);
+}
+
+#acompanhar{
+    font-size: 20px;
+}
+
+#falha{
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#aiai{
+    margin-top: 13px;
+}
+
+#loading_block{
+    position: absolute;
+}
+
+.how_many{
+    width: 300px!important;
+}
+
+#input_how_many{
+    display: flex;
+    align-items: center;
+}
+
+.input_how_many.loading{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+#max_contacts{
+    color: white;
+    background-color: rgb(98, 98, 207);
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+#max_contacts:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.flex-aux22{
+    width: 100%;
+    
+}
+.loading_max{
+    z-index: 99999;
+    position: absolute;
+    left: 40%;
+    width: 20px!important;
+    height: 20px !important;
+}
+
+#help_flex{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+#set_target_name{
+    border: none;
+    color: white;
+    background-color: rgb(98, 98, 207);
+    border-radius: 5px;
+    margin-left: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+#set_target_name:hover{
+    cursor: pointer;
+}
+
+.radio_label{
+    font-size: 10px !important;
+}
+
+#disparo_type{
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgb(245, 243, 243);
+}
+
+
+#aux_flex2{
+    margin-top: 23px;
+    display: flex;
+    gap: 40px;
+}
+
+#preview_excel{
+    border: 1px rgb(235, 226, 226) solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    font-family: "Roboto", sans-serif;
+    width: 50px;
+    height: 50px;
+    color: rgb(221, 210, 210);
+    border-radius: 50%;
+
+}
+#preview_excel:hover{
+    cursor: pointer;
+    background-color: rgb(211, 211, 214);
+}
+
+#eye{
+    color: rgb(72, 69, 69);
+    font-size: 20px !important;
+}
+
+#anexar_excel{
+    width: 50%;
+    background-color: rgb(10, 101, 10) !important;
+    color: white !important;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+    color: rgb(44, 42, 42);
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: rgba(210, 210, 224, 0.8);
+    padding: 10px 20px;
+}
+
+#anexar_excel:hover{
+    cursor: pointer;
+}
+
+.flex_aux6{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select_column{
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.select_column_label{
+    width: 60%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+#cancel_columns{
+    border-radius: 5px;
+    color: rgb(232, 104, 104);
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: rgb(242, 236, 236);
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+#cancel_columns:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(219, 89, 89);
+}
+
+#ready_columns{
+    position: absolute;
+    right: 23px;
+    border-radius: 5px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: rgb(104, 94, 243);
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+#ready_columns:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#none_import{
+    font-size: 11px;
+}
+
+#close_excel_preview{
+    border-radius: 5px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: rgb(49, 49, 230,0.8);
+    padding: 10px 20px;
+}
+
+#close_excel_preview:hover{
+    cursor: pointer;
+    background-color: rgb(49, 49, 230,0.85);
+
+}
+
+#radio_disparo{
+    margin-bottom: 20px;
+}
+
+#alert_type_disparo{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#label_type_disparo{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.radio_label{
+    padding-right: 10px;
+    border-radius: 5px;
+    border: 1px rgb(229, 228, 228) solid;
+}
+
+.radio_label_inner{
+    font-size: 10px;
+}
+
+#trash{
+    font-size:18px;
+}
+
+#trash_excel{
+    color: rgb(235, 78, 78);
+    border: 1px rgb(235, 226, 226) solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    font-family: "Roboto", sans-serif;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+
+}
+#trash_excel:hover{
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(224, 89, 89);
+}
+
+#flex_aux4545{
+    display: flex;
+    gap: 10px;
+}
+
+#config_wooc{
+    margin-top: 25px;
+    height: 50px;
+    width: 80%;
+    background-color: #96588a !important;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+    color: rgb(44, 42, 42);
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: rgba(210, 210, 224, 0.8);
+}
+
+#config_wooc:hover{
+    cursor: pointer;
+}
+
+#wooc_icon{
+    height: 80px;
+    font-size: 100px;
+}
+
+#flex-aux90{
+    gap:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#aux_flex3{
+    display: flex;
+    gap: 40px;
+}
+
+#flex_aux9999{
+    margin-top: 22px;
+    display: flex;
+    gap: 10px;
+}
+
+
+#preview_wooc{
+    border: 1px rgb(235, 226, 226) solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    font-family: "Roboto", sans-serif;
+    width: 50px;
+    height: 50px;
+    color: rgb(221, 210, 210);
+    border-radius: 50%;
+
+}
+#preview_wooc:hover{
+    cursor: pointer;
+    background-color: rgb(211, 211, 214);
+}
+
+#trash_wooc{
+    color: rgb(235, 78, 78);
+    border: 1px rgb(235, 226, 226) solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    font-family: "Roboto", sans-serif;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+
+}
+#trash_wooc:hover{
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(224, 89, 89);
+}
+
+#wooc_dialog{
+    width: 100px !important;
+}
+
+.select_wooc_label{
+    width: 60%;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+#cancel_wooc{
+    color: black;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: rgb(232, 232, 235);
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+#cancel_wooc:hover{
+    background-color: rgb(200, 200, 205);
+    cursor: pointer;
+}
+
+
+#ready_wooc{
+    border-radius: 5px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: rgb(104, 94, 243);
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+#ready_wooc:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.date{
+    font-family: "Roboto", sans-serif;
+    user-select: none;
+    color: rgb(143, 136, 136);
+    border-radius: 3px;
+    border: 1px solid rgb(199, 194, 194);
+    margin-bottom: 5px;
+    padding: 10px 5px;
+    width: 93%;
+}
+
+.date:focus{
+    border: 2px solid #347ef5;
+    outline: none;
+}
+
+#setting_wooc{
+    display: flex;
+    gap: 30px;
+}
+
+.api-config, .request-data-config{
+    border: 1px solid rgb(218, 211, 211);
+    margin-bottom:20px ;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.generic_painel_input{
+    background-color: rgb(255, 251, 251);
+}
+
+.label_555{
+    user-select: none;
+    z-index: 10000;
+    display: flex;
+    gap: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    position: relative;
+    top: 8px;
+    left: 15px;
+    background-color: white;
+}
+
+#tutorial{
+    user-select: none;
+    border: 1px solid rgb(218, 209, 209);
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: rgb(250, 245, 245);
+}
+
+#close_wooc_preview{
+    width: 30%;
+    border-radius: 5px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: rgb(49, 49, 230,0.8);
+    padding: 10px 20px;
+}
+
+#close_wooc_preview:hover{
+    cursor: pointer;
+    background-color: rgb(49, 49, 230,0.85);
+
+}
+
+.invalid_fields{
+    transition: 0.2s all ease;
+    display: none;
+    user-select: none;
+    border: 1px solid rgb(249, 173, 173);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: rgb(246, 9, 9);
+    background-color: rgb(251, 215, 215);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.http_error{
+    transition: 0.2s all ease;
+    user-select: none;
+    border: 1px solid rgb(249, 173, 173);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: rgb(246, 9, 9);
+    background-color: rgb(251, 215, 215);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.wooc_progress{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.wooc_success{
+    padding:10px 15px;
+    font-size: 12px;
+    background-color: rgb(196, 244, 196);
+    color: rgb(5, 130, 5);
+    border-radius: 5px;
+    border: 1px solid rgb(65, 231, 65);
+    margin-bottom: 15px;
+
+}
+
+.api-config.disabled,.request-data-config.disabled{
+    user-select: none;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.ready_wooc.disabled{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#duplicate_alert{
+    font-style: italic;
+    margin-left: 4%;
+}
+
+.flex-wooc{
+    display: flex;
+    gap: 68%;
+}
+
+#set_temp{
+    color: rgb(60, 57, 57);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(228, 239, 244);
+    font-family: "Roboto", sans-serif;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: all ease 0.3s;
+}
+
+#set_temp:hover{
+    cursor: pointer;
+    background-color: rgb(218, 222, 224)
+}
+
+#set_temp_icon{
+    color: rgb(60, 57, 57);
+    font-size: 20px;
+}
+
+.bound{
+    width: 20%;
+}
+
+.bounds-container{
+    white-space: nowrap;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.bounds-label.first{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.bounds-label.second{
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.ready{
+    margin-top: 40px;
+    margin-left: 85%;
+    border-radius: 5px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: rgb(49, 49, 230,0.8);
+    padding: 10px 20px;
+}
+
+.ready:hover{
+    cursor: pointer;
+    background-color: rgb(49, 49, 230,0.85);
+
+}
+
+#not_alter{
+    margin-left:4%;
+    font-weight: bold;
+}
+
+.loading_con{
+    z-index: 99999;
+    position: absolute;
+    left: 45%;
+    top:20%;
+    width: 20px!important;
+    height: 20px !important;
+}
+
+.any_flex{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading_connection{
+    opacity: 0.5;
+    pointer-events: none;
+
+}
+
+#cancel_camp{
+    margin-right: 100px;
+    margin-top: 30px;
+    border-radius: 5px;
+    color:  rgb(232, 104, 104);
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color:  white;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+#cancel_camp:hover{
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.loading_camp{
+    margin-right: 10px;
+    height: 20px !important ;
+    width: 20px !important;
+}
+
+
+
+.go_delete_campaign{
+    position: relative;
+    border-radius: 5px;
+    color:  white;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: rgb(232, 104, 104);
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.go_delete_campaign:hover{
+    cursor: pointer;
+    background-color: rgb(228, 67, 67)
+}
+
+.go_delete_campaign.blocked{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.export_camp{
+    position: relative;
+    margin-left: 10px;
+    border-radius: 5px;
+    color:  white;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: #1d6f42;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.export_camp:hover{
+    cursor: pointer;
+    background-color: #1d6f42
+}
+
+.export_camp.blocked{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+#deleting_camp{
+    position: absolute;
+    width: 15px !important;
+    height: 15px !important;
+    left: 42%;
+    top:30%;
+}
+
+#exporting_camp{
+    position: absolute;
+    width: 15px !important;
+    height: 15px !important;
+    left: 42%;
+    top:30%;
+}
+
+
+.opacity0{
+    opacity: 0;
+}
+
+.success_delete_campaign{
+    color: rgb(26, 211, 26);
+}
