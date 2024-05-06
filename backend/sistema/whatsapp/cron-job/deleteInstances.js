@@ -1,7 +1,7 @@
 require('dotenv').config();
 const fetch = require('node-fetch');
 //(`http://localhost:${process.env.WPPAPI_PORT}`)
-const WPPAPI_URL = "https://wpp-api.skyler.com.br";
+const WPPAPI_URL = "https://wpp-api.pulsefire.com.br";
 const deleteAllInstances = async()=>{
     const headers = {
         'accept': 'application/json',
