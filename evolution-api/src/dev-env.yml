@@ -51,10 +51,10 @@ DEL_TEMP_INSTANCES: true # Delete instances with status closed on start
 
 # Temporary data storage
 STORE:
-  MESSAGES: true
-  MESSAGE_UP: true
+  MESSAGES: false
+  MESSAGE_UP: false
   CONTACTS: true
-  CHATS: true
+  CHATS: false
 
 CLEAN_STORE:
   CLEANING_INTERVAL: 7200 # 7200 seconds === 2h

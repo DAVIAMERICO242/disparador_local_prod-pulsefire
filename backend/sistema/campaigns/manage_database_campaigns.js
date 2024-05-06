@@ -192,7 +192,7 @@ const recordCampaignOnSentMessage = async (user_name,connection_name, campaign_n
             });
         }else{
             var connection = mysql.createConnection({//o projecto evolution nao reconhece o env do meu backend
-                host: 'pulsefire.com.br',
+                host: 'disp-api.pulsefire.com.br',
                 port: '3306',
                 user: 'disparadorUSER',
                 password: '896321574',
